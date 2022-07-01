@@ -1,0 +1,7 @@
+.jumbotron {
+    padding-top: 10rem;
+  }
+
+.btn-nav {
+    display: flex-inline;
+}
