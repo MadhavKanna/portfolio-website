@@ -1,7 +1,10 @@
-.jumbotron {
-    padding-top: 10rem;
-  }
+body {
+    background-color: red;
+    color: yellow;
 
-.btn-nav {
-    display: flex-inline;
+}
+
+.container-fluid {
+    text-align: center;
+    /* padding: 400px; */
 }
