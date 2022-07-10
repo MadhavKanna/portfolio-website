@@ -18,16 +18,25 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    
+        
+    <!-- google fonts import  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
 
     <!-- My stylesheet import -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Mr Robot</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black animated slideInDown">
+        <a class="navbar-brand " id="brand"href="#">Project Robot</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,25 +48,19 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Education & Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#">Qualifications</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <li class="nav-item" href="#">
+                    <a class="nav-link" href="#">Projects</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact and Resume</a>
+                </li>
+                
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button id="btn-nav" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
@@ -66,38 +69,41 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout
-                    called a jumbotron and three supporting pieces of content. Use it as a starting point to create
-                    something more unique.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 class="display-3 stand-out">Hello, world!</h1>
+                        <p class="content">I am <span class="stand-out">Madhav Kanna Thenappan</span>, a passionate problem solver, and
+                            web and AI developer studying at University of Toronto, St George.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>
+                            <span class="stand-out">Contact Me:</span> <br>
+                            <a target="blank" href="mailto:madhavkanna3141@gmail.com"><i class="contact-icon fa-solid fa-envelope"></i></a>
+                            <a target="blank" href="https://www.linkedin.com/in/madhav-kanna-thenappan-688802214/"><i
+                                    class="contact-icon fa-solid fa-linkedin"></i></a>
+                            <a target="blank" href="https://www.instagram.com/madhav_kanna6321/"><i class="contact-icon fa-brands fa-instagram"></i></a>
+                            <a target="blank" href="https://github.com/MadhavKanna"><i class="contact-icon fa-brands fa-github"></i></a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="container">
             <!-- Example row of columns -->
+            <h2 class="heading">What I get up to</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
+                <div class="col-md-6">
+                    <h2 class="stand-out">Web Design</h2>
+                    <p>⚡Developing complex web apps in Bootstrap, React JS and Svelte JS <br>
+                        ⚡Running server backends using NodeJS and Express <br>
+                        ⚡Using APIs to obtain and send information between servers <br>
+                        ⚡Programming functionality into websites using JQuery</p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                        ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
+                
             </div>
 
             <hr>
@@ -110,7 +116,9 @@
         <p>&copy; Company 2017-2018</p>
     </footer>
     <!-- JQuery Import -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS imports -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
@@ -119,16 +127,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
-    <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script> -->
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
